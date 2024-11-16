@@ -1,0 +1,23 @@
+1. Định nghĩa cơ sở dữ liệu quan hệ:
+
+. Là một hệ thống quản lý cơ sở dữ liệu sử dụng mô hình quan hệ để tổ chức và lưu trữ dữ liệu. Dữ liệu trong cơ sở dữ liệu được tổ chức trong các bảng(tables) có cấu trúc cụ thể.
+
+. SQL: để truy vấn và thao tác dữ liệu.
+
+. Tính toàn vẹn dữ liệu:
+	+ Toàn vẹn xác thực (entity integrity): ví dụ trong bảng KhachHang, trường MaKhachHang là khóa chính. Mỗi khách hàng sẽ có một mã khách hàng duy nhất, không được trùng hoặc null.
+	+ Toàn vẹn tham chiếu (Referential Integrity): ví dụ nếu trong bảng HoaDon có MaKhachHang là khóa ngoại thì tất cả các giá trị của MaKhachHang trong bảng HoaDon phải tồn tại trong bảng KhachHang
+	+ Toàn vẹn domain(Domain Integrity): Trường Tuoi trong bảng KhachHang có thể yêu cầu giá trị phải là một số nguyên dương trong phạm vi 18 đếm 100.
+	+ Toàn vẹn sử lý(Transaction Integrity): Giả sử bạn đang thực hiện một giao dịch bao gồm việc cập nhật số dư tài khoản của khách hàng và tạo một giao dịch ngân hàng. Nếu một trong các 
+thao tác thất bại, toàn bộ giao dịch sẽ bị hủy bỏ để đảm bảo tính toàn ven
+
+. Lịch sử phát triểu của cơ sở dữ liệu quan hệ:
+	+ bắt đầu phát triển năm 1969 - 1970 do Edgar F.Codd(IBM) đề xuất mô hình quan hệ, sử dụng bảng để lưu trữ đại số quan hệ để truy vấn dữ diệu.
+	+ 1970s: IBM pháp triểu System R(hệ cơ sở dữ liệu quan hệ đầu tiên và tạo ra SQL làm ngôn ngữ truy vấn
+	+ 1980s: Các RDBMS thương mại ra đời (Oracle, IBM DB2).SQL trở thành chuẩn công nghiệp
+	+ 1990s: SQL được chuẩn hóa và mở rộng với các tính năng nâng cao như stored procedures và trigger
+	+ 2000s:RDBMS đối mặt với big data và dữ liệu phân tán, cạnh tranh với NoSQL.
+	+ 2010s - nay: RDBMS hiện đại hỗ trợ JSON, cloud, và cơ sở dữ liệu dưới dạng dịch vụ(DBaaS),thích ứng với nhu cầu xử lý dữ liệu lớn.
+
+. Các hệ quản trị cơ sở dữ liệu: MySQL, PostgreSQL, SQL Server, Oracle Database.
+
